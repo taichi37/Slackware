@@ -1,2 +1,1 @@
-# mythZm
 MythTV and ZoneMinder
