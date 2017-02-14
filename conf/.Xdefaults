@@ -1,0 +1,9 @@
+XTerm*background: black
+XTerm*foreground: grey78
+XTerm*faceName: Liberation Mono: size=12
+XTerm*faceNameDoublesize: Monosapce: size=12
+
+
+URxvt.background: black
+URxvt.foreground: gray78
+URxvt.font: xft: Liberation Mono: pixelsize=16
