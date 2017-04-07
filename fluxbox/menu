@@ -1,0 +1,92 @@
+# - To prevent any other app from overwriting your menu
+#   you can change the menu name in ~/.fluxbox/init to:
+#     session.menuFile: ~/.fluxbox/my-menu
+[begin] (Fluxbox-1.3.7)
+[encoding] {UTF-8}
+      [exec] (Run) {fbrun}
+      [exec] (rxvt-unicode) {urxvt}
+      [exec] (Xfce4-terminal) {xfce4-terminal}
+
+[submenu] (Internet)
+      [exec] (Chrome) {google-chrome-stable}
+      [exec] (Firefox) {firefox}
+      [exec] (PaleMoon) {palemoon}
+      [exec] (Vivaldi) {vivaldi}
+[end]
+
+[submenu] (File Manager)
+      [exec] (Thunar) {thunar}
+      [exec] (PCManfm-qt) {pcmanfm-qt}
+      [exec] (mc root) {urxvt -e sudo mc /usr/local/src}
+[end]
+
+[submenu] (Editor)
+      [exec] (VSCode) {code-oss}
+      [exec] (Atom) {atom}
+[end]
+
+[submenu] (Multimedia)
+      [exec] (Audacious) {audacious}
+      [exec] (SMPlayer) {smplayer}
+[end]
+
+[submenu] (Development)
+      [exec] (Arduino) {arduino}
+      [exec] (Putty) {putty}
+      [exec] (Chrome incognito) {google-chrome-stable --incognito}
+[end]
+
+[submenu] (System Tools)
+      [exec] (htop) {urxvt -e htop}
+      [exec] (urxvt root) {urxvt -e sudo su -}
+      [exec] (atom root) {sudo atom}
+[end]
+
+[submenu] (Test Area)
+      [exec] (Random Wallpaper) {fbsetbg -f -r ~/.fluxbox/backgrounds}
+      [exec] (urxvt via root) {sudo urxvt}
+      [exec] (atom via root) {sudo atom}
+      [exec] (firefox via root) {sudo firefox}
+[end]
+
+[submenu] (Fluxbox menu)
+      [config] (Configure)
+      [submenu] (System Styles) {Choose a style...}
+            [stylesdir] (/usr/share/fluxbox/styles)
+      [end]
+      [submenu] (User Styles) {Choose a style...}
+            [stylesdir] (~/.fluxbox/styles)
+      [end]
+      [submenu] (Tools)
+            [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
+            [exec] (Screenshot - JPG) {import screenshot.jpg && display -resize 50% screenshot.jpg}
+            [exec] (Screenshot - PNG) {import screenshot.png && display -resize 50% screenshot.png}
+            [exec] (Run) {fbrun}
+            [exec] (Regen Menu) {fluxbox-generate_menu}
+      [end]
+      [submenu] (Window Managers)
+            [restart] (mwm) {mwm}
+            [restart] (twm) {twm}
+            [restart] (compiz) {compiz}
+            [restart] (kde) {startkde}
+            [restart] (fvwm) {fvwm}
+            [restart] (xfce4) {startxfce4}
+            [restart] (fvwm2) {startfvwm2}
+            [restart] (blackbox) {startblackbox}
+            [restart] (windowmaker) {wmaker}
+      [end]
+      [exec] (Lock screen) {xlock}
+      [commanddialog] (Fluxbox Command)
+      [reconfig] (Reload config)
+      [restart] (Restart)
+      [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) | xmessage -file - -center}
+      [separator]
+      [exit] (Exit)
+[end]
+[separator]
+[submenu] (Logout)
+      [exec] (reboot) {sudo /sbin/shutdown -r now}
+      [exec] (poweroff) {sudo /sbin/shutdown -h now}
+[end]
+[endencoding]
+[end]
