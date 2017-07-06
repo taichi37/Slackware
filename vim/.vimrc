@@ -1,9 +1,9 @@
 set backupdir=~/.vim/backup
 set directory=~/.vim/swp
-set undir=~/.vim/undo
+set undodir=~/.vim/undo
 
 set nobackup
-set noswpfile
+set noswapfile
 set noundofile
 
 set softtabstop=4
