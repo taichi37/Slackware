@@ -1,0 +1,16 @@
+#EXTM3U
+
+#EXTINF:-1, Christine - 不要走
+plugin://plugin.video.youtube/play/?video_id=28Ffn8YlNgQ
+
+#EXTINF:-1, Christine - 尋尋覓覓
+plugin://plugin.video.youtube/play/?video_id=pB0sMlGqYMA
+
+#EXTINF:-1, Christine - 竹林中
+plugin://plugin.video.youtube/play/?video_id=-_AQYituiWc
+
+#EXTINF:-1, Christine - 一百萬個可能
+plugin://plugin.video.youtube/play/?video_id=hzypdAfwN24
+
+#EXTINF:-1, Christine - That's how it is
+plugin://plugin.video.youtube/play/?video_id=_1oLpKYqkGg
