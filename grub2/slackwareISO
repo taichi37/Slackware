@@ -1,0 +1,13 @@
+# /etc/grub.d/40_custom
+
+menuentry "Slackware 14.2 install ISO" {
+    insmod loopback
+    insmod iso9660
+    set isofile=/ISO/slackware64-14.2-install-dvd.iso
+    loopback loop (hd0,msdos2)$isofile
+    linux (loop)/kernels/huge.s/bzImage load_ramdisk=1 prompt_ramdisk=0 rw printk.time=0 SLACK_KERNEL=huge.s
+    initrd (loop)/isolinux/initrd.img
+}
+
+
+# grub-mkconfig -o /boot/grub/grub.cfg
