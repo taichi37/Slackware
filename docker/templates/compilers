@@ -10,5 +10,4 @@ kernel-headers
 libtool
 m4
 make
-patch
 pkg-config
