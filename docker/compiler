@@ -1,0 +1,14 @@
+autoconf
+automake
+binutils
+cmake
+flex
+gcc
+gcc-g++
+guile
+kernel-headers
+libtool
+m4
+make
+patch
+pkg-config
