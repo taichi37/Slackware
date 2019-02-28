@@ -5,6 +5,7 @@ cmake
 flex
 gcc
 gcc-g++
+glibc
 guile
 kernel-headers
 libtool
