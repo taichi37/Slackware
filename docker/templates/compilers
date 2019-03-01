@@ -8,7 +8,6 @@ gcc-g++
 glibc
 guile
 kernel-headers
-libmpc
 libtool
 m4
 make
