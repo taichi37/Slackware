@@ -1,1 +1,0 @@
-Fluxbox 設定
